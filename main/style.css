@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Ponniens", sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    z-index: 10;
+    overflow: hidden;
+}
+
+/* nav bar style */
+nav .logoutBtn {
+    font-size: 30px;
+    color: #C80815;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navHeader {
+    font-size: 25px;
+    padding: 8px 20px;
+    font-weight: 700;
+}
+
+/* admin page style */
+.container .fields,
+.container .fields1 {
+    position: relative;
+    text-align: center;
+    padding: 60px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    overflow-y: hidden;
+    text-decoration: none;
+    color: #333;
+}
+
+.container .fields1 {
+    padding: 10px 0;
+}
+
+.container .fields1 .txt1 {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.container .fields1 .txt2,
+.container .fields1 .txt3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.container .fields:hover,
+.container .fields1:hover {
+    transform: scale(0.9);
+    color: #333;
+}
+
+.container .fields::after {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    font-size: 150px;
+    color: #CCCCCC;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.container .fields.admin::after {
+    content: "\f007";
+}
+
+.container .fields.classes::after {
+    content: '\f02d';
+}
+
+.container .fields.staff::after {
+    content: "\f0c0";
+}
+
+.container .fields.students::after {
+    content: "\e592";
+}
+
+.container .fields1:last-child a {
+    width: 100%;
+    height: 100%;
+}
+
+.container .fields1:last-child a::after {
+    content: '\2b';
+}
+
+.container .fields .txt {
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    z-index: 2;
+}
+
+.container .fields .count {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: 600;
+    padding: 15px 30px;
+    font-size: 25px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* table button style */
+tbody button {
+    background: transparent;
+    outline: none;
+    border: none;
+
+}
+
+tbody button i {
+    font-size: 20px;
+}
+
+tbody .edit {
+    color: #086bc8;
+    z-index: 5;
+}
+
+tbody .dlt {
+    color: #C80815;
+}
+
+tbody td a {
+    font-size: 25px;
+}
+
+/* sidemenu bar  */
+
+nav a.bar {
+    /* background-color: #C80815; */
+    font-size: 30px;
+
+}
+
+.sideBar {
+    width: 0;
+    height: 100vh;
+    top: 0;
+    z-index: 5;
+    position: absolute;
+    background-color: #CCCCCC;
+    transition: all 0.5s ease;
+}
+
+.sideBar.open {
+    width: 250px;
+}
+
+.sideBar.close {
+    width: 0;
+}
+
+.sideBar .menu {
+    width: 100%;
+    height: 100%;
+}
+
+.sideBar .menuList {
+    width: 100%;
+    color: #333;
+    padding: 10px 10px;
+    margin-bottom: 35px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.subMenu {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.subMenu.active {
+    display: block;
+}
+
+.subMenu .submenuList {
+    width: 100%;
+    padding: 10px 10px;
+    margin-left: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.sideBar .menuList a,
+.subMenu .submenuList a {
+    position: absolute;
+    text-decoration: none;
+    background: transparent;
+    width: 100%;
+    color: #333;
+}
+
+.subMenu .submenuList a {
+    padding: 10px;
+}
+
+.sideBar .menuList a:hover,
+.subMenu .submenuList a:hover {
+    background-color: #086bc8;
+    color: #CCCCCC;
+}
+
+.closeBtn {
+    position: absolute;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sideBar .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sideBar .logo .img {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.sideBar .logo .img img {
+    width: 150px;
+}
+
+.header .return a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
